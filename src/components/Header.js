@@ -2,16 +2,23 @@
 function Header() {
   return (
     <header>
-      <div className="container">
-        <h1>Benim Blog'um</h1>
+      <div class="logo">
+        <h1>dev .blog</h1>
+      </div>
+      <div class="nav-container">
         <nav>
           <ul>
-            <li><a href="/">Ana Sayfa</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/hakkimda">Hakkımda</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">About</a></li>
           </ul>
         </nav>
+        <div class="auth-buttons">
+          <button class="login-btn">Login</button>
+          <button class="signup-btn">Register</button>
+        </div>
       </div>
+      
     </header>
   );
 }

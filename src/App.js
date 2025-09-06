@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import BlogCard from './components/BlogCard';
@@ -6,9 +5,9 @@ import BlogCard from './components/BlogCard';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header/>
       <main>
-        <BlogCard />
+        {/* <BlogCard /> */}
       </main>
     </div>
   );

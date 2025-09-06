@@ -1,17 +1,83 @@
 /* src/App.css */
+/* header components */
 header {
-  background-color: #333;
-  color: white;
-  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #161616;
+  padding: 1rem 20px;
 }
-
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  background: linear-gradient(45deg, #00ff88, #00ccff);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.logo::before {
+  content: "⚡";
+  font-size: 1.5rem;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
-
 nav a {
-  color: white;
+  color: rgb(189, 185, 185);
+  padding: 5px 15px;
   text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border :1px solid transparent;
 }
+nav a:hover {
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.1);
+  border :1px solid #00ff88;
+}
+.auth-buttons
+{
+  display: flex;
+  gap: 0.5rem;
+}
+.login-btn{
+  color: #00ccff;
+  background-color: transparent;
+  border: 1px solid #00ccff;
+  padding: 15px 20px;
+  font-weight: bolder;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.login-btn:hover{
+  background: #00ccff;
+  color: #000;
+}
+.signup-btn{
+  color: #131313;
+  background-color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 15px 20px;
+  font-weight: bolder;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.signup-btn:hover{
+  background:#000;
+  color:  #00ff88;
+}
+/* header components */
+
