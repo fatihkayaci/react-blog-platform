@@ -5,7 +5,6 @@ function BlogList() {
             <BlogCard />
             <BlogCard />
             <BlogCard />
-            <BlogCard />
         </div>
     );
 }
