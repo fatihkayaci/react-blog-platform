@@ -14,6 +14,22 @@ p {
   margin-inline-end: 0px;
   unicode-bidi: isolate;
 }
+/* Scrollbar'ın genel stili */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1b1b;
+}
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 10px;
+} 
+/* Scrollbar tutamacına hover efekti */
+::-webkit-scrollbar-thumb:hover {
+    background: #00ff88;
+}
 /* header components */
 header {
   display: flex;
@@ -188,3 +204,73 @@ nav a:hover {
   background-color: #00cc70;
 }
 /* search components */
+
+/* BlogSection components */
+
+.section-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  padding-left: 10px;
+  text-align: center;
+  position: relative;
+}
+.section-title::after{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(45deg, #00ff88, #00ccff);
+  border-radius: 2px;
+}
+.main-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 85%;
+  margin: 0 auto 3rem;
+}
+/* blog list */
+.blog-list{
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+/* blog list */
+
+/* blog card */
+.blog-card{
+  transform: scale(1);
+  transition: all 0.4s ease;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(38, 37, 37);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.blog-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+  border: 1px solid #00ff88;
+}
+/* blog card */
+
+/* sidebar section */
+.sidebar-section{
+  width: 25%;
+  background-color: rgb(38, 37, 37);
+  border-radius: 10px;
+  padding: 1rem;
+  height: fit-content;
+}
+/* sidebar section */
+
+
+/* BlogSection components */
+
