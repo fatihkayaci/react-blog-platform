@@ -20,6 +20,15 @@ hr {
   background: linear-gradient(to right, transparent, #000, transparent);
   margin: 20px 0;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* Scrollbar'ın genel stili */
 ::-webkit-scrollbar {
   width: 8px;
@@ -68,14 +77,12 @@ header {
   gap: 1rem;
 }
 nav ul {
-  list-style: none;
   display: flex;
   gap: 2rem;
 }
 nav a {
   color: rgb(189, 185, 185);
   padding: 5px 15px;
-  text-decoration: none;
   border-radius: 10px;
   transition: all 0.3s ease;
   border :1px solid transparent;
@@ -378,6 +385,35 @@ nav a:hover {
   border-radius: 10px;
   padding: 1rem;
   height: fit-content;
+}
+.sidebar-section h3{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  position: relative;
+  font-weight: bold;
+}
+.category-item a{
+  color: rgb(90, 89, 89);
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+}
+.category-name{
+  transition: all 0.3s ease;
+}
+.category-item a:hover .category-name{
+  color: #00ff88;
+  transform: translateX(10px);
+}
+.category-count{
+  background: #00ff88;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 /* sidebar section */
 
