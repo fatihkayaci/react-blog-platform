@@ -1,21 +1,23 @@
 // src/components/Header.js
+import { Link } from 'react-router-dom';
+
 function Header() {
   return (
     <header>
-      <div class="logo">
+      <div className="logo">
         <h1>dev .blog</h1>
       </div>
-      <div class="nav-container">
+      <div className="nav-container">
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Posts</a></li>
-            <li><a href="#">About</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="posts">Posts</Link></li>
+            <li><Link to="about">About</Link></li>
           </ul>
         </nav>
         <div class="auth-buttons">
-          <button class="login-btn">Login</button>
-          <button class="signup-btn">Register</button>
+          <button className="login-btn">Login</button>
+          <button className="signup-btn">Register</button>
         </div>
       </div>
       
